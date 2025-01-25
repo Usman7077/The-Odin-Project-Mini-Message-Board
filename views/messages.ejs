@@ -1,0 +1,6 @@
+<ul>
+
+    <% messages.forEach((message,i)=>{ %>
+        <li><%=message.user%> <%=message.text%> <%=message.added.toLocaleString()%></li> <span><a href=<%-`/messageDetails/${i}`%>>show details</a></span>
+        <%})%>
+    </ul>
